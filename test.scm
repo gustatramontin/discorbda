@@ -1,7 +1,9 @@
 (load "main.scm")
+(load "token.scm")
 
 (import discorbda)
+(import token)
 
-(define +token+ "Bot MTA3ODQ3MDY2OTk5OTgwNDQ5Ng.Gbiita.iAPPp38hvabFf1tPr-WxDXq5MCB7rcVop2K2QM")
+(define +token+ bot-token)
 
 (display (users/get-me))

@@ -1,6 +1,6 @@
 (module discorbda (
                    +token+
-                   evoke-api get post
+                   appeler-api get post
                    users/get-me
                    channels/get channels/get-message channels/get-messages
                    )
@@ -9,7 +9,7 @@
 (define +token+ "")
 
 (client-software '(("DiscordBot" "mybot.com" "1.0" )))
-(define (appler-api endpoint method writer)
+(define (appeler-api endpoint method writer)
 
   (with-input-from-request 
     (make-request
